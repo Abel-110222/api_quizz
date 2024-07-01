@@ -16,7 +16,7 @@ const ApiEndpoints = [
 
 app.get('/', (_req, res) => {
   res.json({
-    message: `Welcome to the Blog QUEMADOS MID see our docs at ${process.env.API_URL}/api/docs`,
+    message: `Welcome to API EXAMENES ${process.env.API_URL}/api/docs`,
     endpoints: ApiEndpoints.map(endpoint => `${process.env.API_URL}${endpoint}`) // Asegúrate de definir `ApiEndpoints`
   });
 });
